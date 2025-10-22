@@ -7,5 +7,117 @@
 </head>
 <body>
     <h1>Página de estudos</h1>
+    <form method="get" action="envios_dados.php">
+        <input type="text" name="nome" placeholder="Digite Seu Nome">
+        <input type="e-mail" name="email" placeholder="Digite seu E-mail">
+        <input type="submit" name="enviar" placeholder="Enviar">
+    </form>
+
+    <form>
+        <input type="button" value="Clique Aqui" onclick="msg()">
+    </form>
+
+    <form>
+        <input type="checkbox" name="veiculo1" value="bicicleta">
+        eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="carro">
+        eu tenho um carro<br>
+        <input type="checkbox" name="veiculo3" value="moto">
+        eu tenho uma moto
+    </form>
+
+    <form>
+        Selecione sua cor favorita: <input type="color" name="favcor" value="#0000FF"> 
+    </form>
+
+    <form>
+        Data de nascimento: <input type="date" name="nascimento">
+    </form>
+
+    <form>
+    Data de nascimento: <input type="datetime-local" name="cdaytime">
+    </form>
+
+    <form>
+        <input type="file" name="arquivo">
+    </form>
+
+    <br><br><br>
+
+    <form>
+        <input type="file" name="arquivos" multiple>
+    </form>
+
+    <form>
+        Quantidade (entre 1 e 5): <input type="number" name="qtd" min="1" max="5">
+    </form>
+
+    <form>
+        <input type="password" name="senha"  placeholder="Digite sua senha">
+    </form>
+
+    <form>
+        <p>Qual a sua Idade?</p>
+        <input type="radio" name="idade" value="18_22">18 a 22<br>
+        <input type="radio" name="idade" value="23_30">23 a 30<br>
+        <input type="radio" name="idade" value="mais31">Acima de 31<br>
+    </form>
+
+    <form>
+        Defina seu Nivel de Satisfação<br>
+        Pouco satisfeito😭🙄
+        <input type="range" name="satisfacao" min="0" max="10">
+        Muito satisfeito😁👍
+    </form>
+
+    <form>
+        <label for="email"> Digite seu melhor E-MAIL</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="pin"> Digite o codigo</label>
+        <input type="text" id="pin" name="pin" maxlength="4"><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form>
+        Pesquisar: <input type="search" name="q">
+    </form>
+
+    <form>
+        <input type="submit" value="Enviar Formulário">
+    </form>
+
+    <form>
+        Telefone: <input type="tel" name="usetel">
+    </form>
+
+    <form>
+        Link do seu WebSite: <input type="url" name="webpage">
+    </form>
+
+    <form>
+        <textarea></textarea>
+        <br>
+        <textarea>Área de texto com um texto inicial dentro</textarea>
+    </form>
+
+    <select name="lista" id="lista">
+        <option>Selecione uma opção</option>
+        <option>Macarrão</option>
+        <option>Pizza</option>
+        <option>Nhoque</option>
+        <option>Canelone</option>
+    </select>
+
+    <fieldset>
+        <legend>Formulário</legend>
+    </fieldset>
+
+    <script>
+        function msg(){
+            alert("Você clicou no butaum!¹²³")
+
+        }
+    </script>
 </body>
 </html>
